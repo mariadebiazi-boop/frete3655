@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>365 Fretes | São Paulo</title>
+
+    <link rel="stylesheet" href="SP.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <div class="logo">
+            <img src="imagem/logo.png" alt="Logo 365 Fretes">
+        </div>
+
+        <h1>Atendimento em São Paulo</h1>
+
+    </header>
+
+
+    <!-- BOTÃO VOLTAR -->
+    <a href="transportadora.html" class="botao-voltar">← Voltar</a>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <section class="cadastro">
+
+            <h2>Solicite seu transporte</h2>
+
+            <p>
+                Preencha seus dados para solicitar atendimento
+                da 365 Fretes em São Paulo.
+            </p>
+
+
+            <!-- FORMULÁRIO -->
+            <form id="formulario">
+
+
+                <!-- NOME -->
+                <div class="campo">
+
+                    <label for="nome">Nome completo</label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome completo"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- CPF -->
+                <div class="campo">
+
+                    <label for="cpf">CPF</label>
+
+                    <input
+                        type="text"
+                        id="cpf"
+                        name="cpf"
+                        placeholder="000.000.000-00"
+                        maxlength="14"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- ENDEREÇO -->
+                <div class="campo">
+
+                    <label for="endereco">Endereço</label>
+
+                    <input
+                        type="text"
+                        id="endereco"
+                        name="endereco"
+                        placeholder="Digite seu endereço"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- NÚMERO E CEP -->
+                <div class="linha">
+
+                    <div class="campo">
+
+                        <label for="numero">Número</label>
+
+                        <input
+                            type="text"
+                            id="numero"
+                            name="numero"
+                            placeholder="Nº"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="cep">CEP</label>
+
+                        <input
+                            type="text"
+                            id="cep"
+                            name="cep"
+                            placeholder="00000-000"
+                            maxlength="9"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- BAIRRO E CIDADE -->
+                <div class="linha">
+
+                    <div class="campo">
+
+                        <label for="bairro">Bairro</label>
+
+                        <input
+                            type="text"
+                            id="bairro"
+                            name="bairro"
+                            placeholder="Digite seu bairro"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="cidade">Cidade</label>
+
+                        <input
+                            type="text"
+                            id="cidade"
+                            name="cidade"
+                            placeholder="Digite sua cidade"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- TELEFONE -->
+                <div class="campo">
+
+                    <label for="telefone">Telefone</label>
+
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        placeholder="(00) 00000-0000"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- E-MAIL -->
+                <div class="campo">
+
+                    <label for="email">E-mail</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="seuemail@email.com"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- TIPO DE CARGA -->
+                <div class="campo">
+
+                    <label for="carga">Tipo de carga</label>
+
+                    <select id="carga" name="carga" required>
+
+                        <option value="">
+                            Selecione o tipo de carga
+                        </option>
+
+                        <option value="alimentos">
+                            Alimentos
+                        </option>
+
+                        <option value="industrial">
+                            Produtos industriais
+                        </option>
+
+                        <option value="materia-prima">
+                            Matéria-prima
+                        </option>
+
+                        <option value="outros">
+                            Outros
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- OBSERVAÇÕES -->
+                <div class="campo">
+
+                    <label for="observacoes">Observações</label>
+
+                    <textarea
+                        id="observacoes"
+                        name="observacoes"
+                        placeholder="Conte mais sobre sua carga ou transporte..."
+                        rows="5"
+                    ></textarea>
+
+                </div>
+
+
+                <!-- BOTÃO ENVIAR -->
+                <button type="submit">
+                    Enviar solicitação
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="sao-paulo.js"></script>
+
+</body>
+
+</html>
+

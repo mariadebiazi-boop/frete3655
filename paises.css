@@ -1,0 +1,336 @@
+/* ================================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* ================================
+   CABEÇALHO
+================================ */
+
+header {
+    width: 100%;
+    height: 72px;
+    background-color: #242424;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 145px;
+    height: 105px;
+   
+    border-radius: 0 60px 60px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    border-radius: 0 55px 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+
+/* CABEÇALHO PRINCIPAL */
+
+header {
+    height: 70px;
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 60px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f4d000;
+}
+
+nav .ativo {
+    color: #f4d000;
+}
+
+
+/* ================================
+   ÁREA PRINCIPAL
+================================ */
+
+/*
+   Todos os países usam exatamente
+   o mesmo layout do Paraguai.
+*/
+
+.paraguai,
+.argentina,
+.chile,
+.uruguai,
+.bolivia,
+.peru {
+
+    min-height: calc(100vh - 72px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 80px 10%;
+    gap: 80px;
+}
+
+
+/* ================================
+   TEXTO
+================================ */
+
+.conteudo {
+    width: 45%;
+}
+
+.subtitulo {
+    color: #ffd21f;
+    font-size: 15px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+.texto {
+    font-size: 19px;
+    line-height: 1.7;
+
+    color: #e8e8e8;
+
+    margin-bottom: 35px;
+}
+
+
+/* ================================
+   BOTÃO
+================================ */
+
+.botao {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    background-color: #ffd21f;
+    color: #000;
+
+    text-decoration: none;
+
+    font-weight: bold;
+    font-size: 15px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ================================
+   BOTÃO VOLTAR
+================================ */
+
+.voltar {
+    display: block;
+
+    margin-top: 25px;
+
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.voltar:hover {
+    color: #ffd21f;
+}
+
+
+/* ================================
+   IMAGEM
+================================ */
+
+.imagem {
+    width: 50%;
+}
+
+.imagem img {
+    width: 100%;
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+
+/* ================================
+   RODAPÉ
+================================ */
+
+footer {
+    position: relative;
+
+    padding: 60px 8% 20px;
+
+    background-color: #242424;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+
+/* LOGO DO RODAPÉ */
+
+.logo-footer {
+    width: 75px;
+    height: 75px;
+
+    border-radius: 50%;
+
+    background-color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+
+    top: -38px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.logo-footer img {
+    width: 60px;
+}
+
+
+/* REDES */
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.redes span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* INFORMAÇÕES */
+
+.informacoes {
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    margin-top: 25px;
+    font-size: 8px;
+}
+
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 900px) {
+
+    .menu {
+        gap: 20px;
+        margin-right: 25px;
+    }
+
+    .paraguai,
+    .argentina,
+    .chile,
+    .uruguai,
+    .bolivia,
+    .peru {
+
+        flex-direction: column;
+        padding: 60px 8%;
+    }
+
+    .conteudo,
+    .imagem {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .imagem img {
+        height: 350px;
+    }
+}
+

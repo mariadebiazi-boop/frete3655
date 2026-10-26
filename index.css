@@ -1,0 +1,801 @@
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header {
+    height: 70px;
+    background-color: #202020;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    z-index: 10;
+}
+.logo{
+    width: 150px;
+    height: 70px;
+
+
+    background-color: white;
+
+
+    border-radius: 0 50px 50px 0;
+    display: flex;
+   
+}
+
+
+.logo img {
+    width: 148px;
+    height: auto;
+    border-radius: 0 60px 70px 0;
+    
+}
+
+nav {
+    flex: 1;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0 60px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 11px;
+
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav .ativo {
+    color: #f4d000;
+}
+
+/* =====================================================
+   INÍCIO
+===================================================== */
+
+.inicio {
+    padding: 70px 8% 100px;
+    background-color: #ffffff;
+}
+
+.frase-inicio {
+    width: 55%;
+
+    margin-left: 7%;
+    margin-bottom: 45px;
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* =====================================================
+   IMAGENS PRINCIPAIS
+===================================================== */
+
+.imagens-caminhao {
+    display: flex;
+
+    gap: 15px;
+
+    width: 100%;
+}
+
+.imagem-hover {
+    width: calc(50% - 7.5px);
+    height: 310px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.imagem-hover img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: opacity 0.4s ease;
+}
+
+.imagem-hover img:first-child {
+    opacity: 1;
+}
+
+.imagem-hover img:last-child {
+    opacity: 0;
+}
+
+.imagem-hover:hover img:first-child {
+    opacity: 0;
+}
+
+.imagem-hover:hover img:last-child {
+    opacity: 1;
+}
+
+/* =====================================================
+   COMO FUNCIONA
+===================================================== */
+
+.como-funciona {
+    padding: 20px 8% 110px;
+    background-color: #ffffff;
+}
+
+.titulo-funciona {
+    width: 70%;
+
+    margin-left: 8%;
+    margin-bottom: 65px;
+}
+
+.titulo-funciona h2 {
+    font-size: 20px;
+    font-weight: 500;
+
+    margin-bottom: 8px;
+}
+
+.titulo-funciona p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.cards {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 50px;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.card {
+    width: 30%;
+}
+
+.card img {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 0 auto 35px;
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* =====================================================
+   ÁREA DE ATUAÇÃO
+===================================================== */
+
+.atuacao {
+    min-height: 560px;
+
+    padding: 70px 5%;
+
+    background-color: #050505;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+/* =====================================================
+   TEXTO DA ÁREA DE ATUAÇÃO
+===================================================== */
+
+.texto-atuacao {
+    width: 43%;
+
+    min-width: 0;
+}
+
+.texto-atuacao h3 {
+    color: #ffd21c;
+
+    font-size: 18px;
+
+    margin-bottom: 18px;
+}
+
+.texto-atuacao h2 {
+    font-size: 25px;
+    line-height: 1.25;
+
+    margin-bottom: 40px;
+}
+
+.texto-atuacao > p {
+    width: 100%;
+    max-width: 400px;
+
+    margin-top: 35px;
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* =====================================================
+   BOTÕES DE ATUAÇÃO
+===================================================== */
+
+.botoes-atuacao {
+    display: flex;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+.botoes-atuacao button {
+    width: 180px;
+    height: 45px;
+
+    border: none;
+    border-radius: 9px;
+
+    background-color: #ffd21c;
+    color: #111111;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.botoes-atuacao button:hover {
+    background-color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+/* =====================================================
+   CONTEÚDO DA ATUAÇÃO
+===================================================== */
+
+.conteudo-atuacao {
+    width: 100%;
+}
+
+#conteudoBrasil {
+    display: block;
+}
+
+#conteudoInternacional {
+    display: none;
+}
+
+/* =====================================================
+   MAPA DO BRASIL
+===================================================== */
+
+.mapa-container {
+    width: 53%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: visible;
+
+    min-width: 0;
+}
+
+.mapa-container object {
+    width: 600px;
+    height: 545px;
+
+    max-width: 100%;
+
+    display: block;
+}
+
+
+/* MAPA INTERNACIONAL */
+
+#mapaInternacionalContainer {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+#mapaInternacional {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    object-fit: contain;
+}
+
+/* MAPA DO BRASIL */
+
+#mapaBrasilContainer {
+    align-items: center;
+    justify-content: center;
+}
+
+#mapaBrasil {
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+    border: none;
+}
+
+
+/* =====================================================
+   PAÍSES INTERNACIONAIS
+===================================================== */
+
+.paises {
+    display: grid;
+
+    grid-template-columns: repeat(2, 180px);
+
+    gap: 18px;
+
+    justify-content: start;
+
+    margin-top: 20px;
+}
+
+.pais {
+    width: 180px;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 9px;
+
+    background-color: #ffd21c;
+    color: #111111;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    text-decoration: none;
+    text-align: center;
+}
+
+.pais:hover {
+    background-color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+/* =====================================================
+   SERVIÇOS
+===================================================== */
+
+.servicos {
+    padding: 110px 8%;
+
+    background-color: #ffffff;
+}
+
+.grade-servicos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 80px 60px;
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.imagem-servico {
+    width: 170px;
+    height: 140px;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+}
+
+.imagem-servico img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.imagem-servico:hover img {
+    transform: scale(1.05);
+}
+
+/* =====================================================
+   CONTATO
+===================================================== */
+
+.contato {
+    padding: 70px 40px;
+
+    text-align: center;
+
+    background-color: #ffffff;
+}
+
+/* =====================================================
+   RODAPÉ
+===================================================== */
+
+footer {
+    position: relative;
+
+    padding: 60px 8% 20px;
+
+    background-color: #242424;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.logo-footer {
+    width: 75px;
+    height: 75px;
+
+    border-radius: 50%;
+
+    background-color: #ffffff;
+
+    object-fit: contain;
+
+    position: absolute;
+
+    top: -38px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.redes {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+.redes span {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.informacoes {
+    font-size: 10px;
+
+    line-height: 1.8;
+}
+
+.copyright {
+    margin-top: 25px;
+
+    font-size: 8px;
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 800px) {
+
+    /* HEADER */
+
+    nav {
+        padding: 0 20px;
+    }
+
+    /* INÍCIO */
+
+    .frase-inicio {
+        width: 80%;
+
+        margin-left: 0;
+    }
+
+    /* IMAGENS */
+
+    .imagens-caminhao {
+        gap: 15px;
+    }
+
+    .imagem-hover {
+        height: 260px;
+    }
+
+    /* COMO FUNCIONA */
+
+    .titulo-funciona {
+        width: 90%;
+
+        margin-left: 0;
+    }
+
+    .cards {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 60px;
+    }
+
+    .card {
+        width: 80%;
+
+        text-align: center;
+    }
+
+    /* ÁREA DE ATUAÇÃO */
+
+    .atuacao {
+        flex-direction: column;
+
+        align-items: center;
+
+        padding: 70px 8%;
+    }
+
+    .texto-atuacao {
+        width: 100%;
+    }
+
+    .mapa-container {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mapa-container object {
+        width: 600px;
+        height: 545px;
+
+        max-width: 100%;
+    }
+
+    /* PAÍSES */
+
+    .paises {
+        justify-content: start;
+    }
+
+    /* SERVIÇOS */
+
+    .grade-servicos {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 60px 30px;
+    }
+}
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 500px) {
+
+    /* HEADER */
+
+
+    .logo {
+    width: 150px;
+    height: 70px;
+
+
+    background-color: white;
+
+
+    border-radius: 0 50px 50px 0;
+    display: flex;
+   
+   
+}
+
+.logo img {
+    width: 148px;
+
+     border-radius: 0 60px 70px 0;
+}
+
+
+    nav {
+        width: 100%;
+
+        padding: 0 10px;
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    /* INÍCIO */
+
+    .inicio {
+        padding: 50px 6% 80px;
+    }
+
+    .frase-inicio {
+        width: 100%;
+
+        margin-left: 0;
+
+        font-size: 14px;
+    }
+
+    /* IMAGENS */
+
+    .imagens-caminhao {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .imagem-hover {
+        width: 100%;
+
+        height: 240px;
+    }
+
+    /* COMO FUNCIONA */
+
+    .como-funciona {
+        padding: 20px 6% 80px;
+    }
+
+    .titulo-funciona {
+        width: 100%;
+
+        margin-left: 0;
+
+        margin-bottom: 50px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 170px;
+        height: 170px;
+    }
+
+    /* ÁREA DE ATUAÇÃO */
+
+    .atuacao {
+        padding: 60px 6%;
+    }
+
+    .texto-atuacao h2 {
+        font-size: 22px;
+
+        margin-bottom: 35px;
+    }
+
+    .botoes-atuacao {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .botoes-atuacao button {
+        width: 100%;
+    }
+
+    /* MAPA */
+
+    .mapa-container {
+        width: 100%;
+    }
+
+    .mapa-container object {
+        width: 100%;
+        height: 350px;
+    }
+
+    /* PAÍSES */
+
+    .paises {
+        grid-template-columns: 1fr;
+
+        justify-items: center;
+
+        gap: 15px;
+    }
+
+    .pais {
+        width: 200px;
+    }
+
+    /* SERVIÇOS */
+
+    .servicos {
+        padding: 80px 6%;
+    }
+
+    .grade-servicos {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    /* RODAPÉ */
+
+    footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
