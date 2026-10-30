@@ -1,6 +1,4 @@
 
-/* CONFIGURAÇÕES GERAIS */
-
 * {
     margin: 0;
     padding: 0;
@@ -42,7 +40,7 @@ a {
     color: inherit;
 }
 
-/* CABEÇALHO - IGUAL AO INDEX */
+
 
 header {
     height: 70px;
@@ -101,7 +99,7 @@ nav .ativo {
     color: #f4d000;
 }
 
-/* CONTEÚDO PRINCIPAL */
+
 
 main {
     width: 100%;
@@ -110,7 +108,7 @@ main {
     background-color: var(--fundo);
 }
 
-/* APRESENTAÇÃO */
+
 
 .apresentacao {
     width: 100%;
@@ -166,7 +164,7 @@ main {
     background-color: var(--dourado);
 }
 
-/* HISTÓRIA */
+
 
 .historia {
     width: min(1100px, 86%);
@@ -187,7 +185,7 @@ main {
     margin-bottom: 0;
 }
 
-/* IMAGENS DA HISTÓRIA */
+
 
 .imagem-container {
     height: 390px;
@@ -214,7 +212,7 @@ main {
     box-shadow: -14px 14px 0 #e7d8a8;
 }
 
-/* TEXTOS DA HISTÓRIA */
+
 
 .texto-bloco {
     padding: 10px 0;
@@ -238,7 +236,7 @@ main {
     line-height: 2;
 }
 
-/* DESTAQUE - PRESENÇA INTERNACIONAL */
+
 
 .destaque {
     position: relative;
@@ -290,7 +288,7 @@ main {
     line-height: 1.9;
 }
 
-/* PAÍSES */
+
 
 .paises {
     display: flex;
@@ -328,7 +326,6 @@ main {
     letter-spacing: 1px;
 }
 
-/* VALORES */
 
 .valores {
     width: min(1100px, 86%);
@@ -352,7 +349,7 @@ main {
     line-height: 1.9;
 }
 
-/* CARDS DOS VALORES */
+
 
 .cards-valores {
     display: grid;
@@ -409,7 +406,6 @@ main {
     line-height: 1.9;
 }
 
-/* RODAPÉ */
 
 footer {
     position: relative;
@@ -466,7 +462,7 @@ footer {
     color: #aaa;
 }
 
-/* TABLET */
+
 
 @media (max-width: 800px) {
 
@@ -484,7 +480,6 @@ footer {
 
 }
 
-/* CELULAR */
 
 @media (max-width: 550px) {
 
