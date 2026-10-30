@@ -91,7 +91,7 @@ main {
             rgba(60, 60, 60, 0.35),
             rgba(60, 60, 60, 0.35)
         ),
-        url("imagem/fundo.png");
+        url("fundo.png");
 
 
     background-size: cover;
